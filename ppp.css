@@ -1,0 +1,364 @@
+body{
+    padding: 20px;
+    background-color: rgb(33, 28, 44);
+    height: 92vh;
+    justify-self: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: clamp(200px, 50%, 500px) auto;
+    gap: 40px;
+    height: 90cqh;
+}
+
+p, h3, h2{
+    color: rgb(247, 239, 233);
+    font-family: monospace;
+}
+
+p{
+    font-size: 16px;
+}
+h3{
+    font-size: 20px;
+    margin: 0;
+}
+h2{
+    font-size: 24px;
+}
+
+#right{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    overflow-y: scroll;
+    align-content: center;
+    margin: 0 auto 0 auto;
+}
+#left{
+    max-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(64, 58, 78);
+    border-radius: 25px;
+    margin: 0 auto 0 auto;
+}
+
+#interesse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(64, 58, 78);
+    margin: auto;
+    max-width: 80%;
+    border-radius: 20px;
+}
+
+#hoverTile{
+    aspect-ratio: 1/1;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    border-radius: 20px;
+    border: solid rgba(255, 255, 255, 0.3) 1px;
+    overflow: clip;
+    margin-right: 20px;
+}
+.tile{
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+
+#hoverTileText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: clamp(200px, 600px, 100%);
+    padding-right: 40px;
+    margin: 0 auto 0 auto;
+}
+
+#hoverTileText p:nth-of-type(2){
+    font-weight: bold;
+}
+#osvaldIntro{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#img{
+    position: relative;
+    margin-bottom: 20px;
+    img{
+        aspect-ratio: 1/1;
+        max-width: 100%;
+        border-radius: 25px;
+    }
+}
+#nameTag{
+    position: absolute;
+    max-width: fit-content;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(33, 28, 44);
+    border: solid rgb(64, 58, 78) 4px;
+    font-weight: bold;;
+}
+
+#imgText{
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    padding-bottom: 100px;
+}
+
+#links{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    margin-bottom: 5vh;
+    padding: 16px;
+    border-bottom: solid rgb(247, 239, 233) 1px;
+    a{
+        width: 64px;
+        height: 64px;
+    }
+    a:hover{
+        transform: scale(1.08);
+        transition: 0.1s linear;
+    }
+}
+
+hr{
+    width: 30%;
+    color: rgb(247, 239, 233);
+}
+
+#skills{
+    max-width: 80%;
+    align-self: center;
+}
+
+#introText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#explainer{
+    margin-bottom: 61px;
+}
+
+#projectList{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+.project{
+    position: relative;
+    max-height: 300px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(64, 58, 78);
+    border-radius: 25px;
+    overflow: clip;
+
+    p{
+        align-self: center;
+    }
+
+    a>img{
+        aspect-ratio: 1/1;
+        max-height: 100%;
+    }
+
+    a{
+        h2{
+            border-bottom: solid rgb(247, 239, 233) 1px;
+        }
+        h2:hover{
+            transform: scale(1.08);
+            transition: 0.1s linear;
+        }
+    }
+}
+
+#olesHus{
+    a{
+        max-width: 300px;
+    }
+    h2{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        filter: drop-shadow(0px 0px 10px #000000);
+    }
+    p{
+        margin: 0 auto 0 auto;
+    }
+}
+
+#vildMad{
+    flex-direction: column;
+    max-height: 400px;
+    a{
+        display: flex;
+        flex-direction: row;
+        height: 320px;
+        justify-content: center;
+        img{
+            aspect-ratio: unset;
+        }
+        h2{
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            filter: drop-shadow(0px 0px 10px #000000);
+        }
+    }
+    p{
+        margin: 25px 0 25px 0;
+    }
+}
+
+#javaGuitars{
+    a{
+        max-width: 300px;
+    }
+    h2{
+        position: absolute;
+        top: 40%;
+        left: 4%;
+        filter: drop-shadow(0px 0px 10px #000000);
+    }
+    p{
+        margin: 0 auto 0 auto;
+    }
+
+}
+
+#CA{
+    a{
+        max-width: 300px;
+        img{
+            filter: brightness(0.8);
+        }
+    }
+    h2{
+        position: absolute;
+        top: 40%;
+        left: 13%;
+        filter: drop-shadow(0px 0px 8px #000);
+    }
+    p{
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media (max-width:1000px) {
+    body{
+        overflow-y: scroll;
+        max-height: unset;
+        height: unset;
+    }
+    
+    main{
+        grid-template-columns: none;
+        grid-template-rows: 1fr auto;
+        max-height: unset;
+        height: unset;
+    }
+
+    #left{
+        width:clamp(300px, 50%, 500px);
+        margin: 0 auto 0 auto;
+    }
+
+    hr{
+        width: 70%;
+    }
+
+    #interesse{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px 15px 15px;
+    }
+
+    .project{
+        flex-direction: column;
+        max-height: unset;
+    }
+
+    #olesHus, #vildMad, #javaGuitars, #CA{
+        flex-direction: column;
+        max-width: 100%;
+        a{
+            max-width: 100%;
+            img{
+                aspect-ratio: 1/1;
+            }
+        }
+        p{
+            padding: 10px;
+        }
+    }
+
+    #CA, #olesHus, #vildMad, #javaGuitars{
+        align-items: center;
+        img{
+            border-radius: 10px;
+        }
+    }
+
+    #CA{
+        img{
+            max-height: 400px;
+        }
+        a{
+            max-height: 400px;
+        }
+        h2{
+            left: 48%;
+        }
+    }
+
+    #olesHus{
+        h2{
+            left: 42%;
+        }
+    }
+    
+    
+    #vildMad{
+        img{
+            border-radius: 0;
+        }
+        h2{
+            left: 1%;
+        }
+        
+    }
+    
+    #javaGuitars{
+        h2{
+            left: 33%;
+        }
+
+    }
+}
